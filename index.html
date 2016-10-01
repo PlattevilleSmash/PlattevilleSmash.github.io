@@ -2,10 +2,15 @@
 <html>
 
 <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Platteville Smash Homepage</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
@@ -54,44 +59,42 @@
             </paper-toolbar>
             <div class="content">
                 <div class="layout horizontal center-justified" style="margin: 0px 0 12px 0;">
-                    <img src="img/pvs486.png" style="height: 110px; margin-right: 8px;">
+                    <img src="img/pvs486.png" style="height: 110px; margin: auto 8px auto auto;">
                     <h1>Platteville Smash</h1>
                 </div>
-
-                    <div class="layout horizontal center-justified" style="margin: 4px 0 4px 0;">
-                        <a href="pr.html">
-                            <paper-button primary raised class="flex">
-                                <h3>Power Rankings</h3>
-                            </paper-button>
-                        </a>
-                        <a href="rules.html" >
-                            <paper-button primary raised class="flex">
-                                <h3>Rules</h3>
-                            </paper-button>
-                        </a>
-                        <a href="trueskill.html">
-                            <paper-button primary raised class="flex">
-                                <h3>TrueSkill Rankings</h3>
-                            </paper-button>
-                        </a>
-                    </div>
-
+                <div class="layout horizontal center-justified" style="margin: 4px 0 4px 0; text-align: center;">
+                    <a href="pr.html">
+                        <paper-button primary raised class="flex" style="height: 100%">
+                            <h3>Power Rankings</h3>
+                        </paper-button>
+                    </a>
+                    <a href="rules.html" >
+                        <paper-button primary raised class="flex" style="height: 100%">
+                            <h3>Rules</h3>
+                        </paper-button>
+                    </a>
+                    <a href="trueskill.html">
+                        <paper-button primary raised class="flex" style="height: 100%">
+                            <h3>TrueSkill Rankings</h3>
+                        </paper-button>
+                    </a>
+                </div>
                 <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
                     <div class="layout horizontal justified">
-                        <a href="https://www.facebook.com/groups/PlattevilleSmashBros/">
-                            <img src="img/facebook100.png" style="height: 100px;" alt="Facebook group">
+                        <a class="flex" href="https://www.facebook.com/groups/PlattevilleSmashBros/">
+                            <img src="img/facebook100.png" style="width: 100%;" alt="Facebook group">
                         </a>
-                        <a href="https://www.twitch.tv/plattevillesmash">
-                            <img src="img/twitch100.png" style="height: 100px;" alt="Twitch channel">
+                        <a class="flex" href="https://www.twitch.tv/plattevillesmash">
+                            <img src="img/twitch100.png" style="width: 100%;" alt="Twitch channel">
                         </a>
-                        <a href="https://www.youtube.com/channel/UCA98cZuH9ndewnlBKMsj8yw">
-                            <img src="img/youtube100.png" style="height: 100px;" alt="YouTube channel">
+                        <a class="flex" href="https://www.youtube.com/channel/UCA98cZuH9ndewnlBKMsj8yw">
+                            <img src="img/youtube100.png" style="width: 100%;" alt="YouTube channel">
                         </a>
-                        <a href="https://twitter.com/pvillesmash">
-                            <img src="img/twitter100.png" style="height: 100px;" alt="Twitter">
+                        <a class="flex" href="https://twitter.com/pvillesmash">
+                            <img src="img/twitter100.png" style="width: 100%;" alt="Twitter">
                         </a>
-                        <a href="http://challonge.com/users/plattevillesmash">
-                            <img src="img/challonge100.png" style="height: 100px;" alt="Challonge brackets">
+                        <a class="flex" href="http://challonge.com/users/plattevillesmash">
+                            <img src="img/challonge100.png" style="width: 100%;" alt="Challonge brackets">
                         </a>
                     </div>
                 </paper-card>

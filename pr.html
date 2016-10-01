@@ -2,12 +2,15 @@
 <html>
 
 <head>
-    <!--CSS Links-->
-
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>Power Rankings - Platteville Smash</title>
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
 
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link href="css/main.css" rel="stylesheet" type="text/css" />
 
     <link rel="import" href="bower_components/polymer/polymer.html">
@@ -39,12 +42,12 @@
             </paper-card>
         </template>
         <script>
-            Polymer({
-                is: "player-card",
-                properties: {
-                    character2: String
-                }
+            addEventListener('WebComponentsReady', function() {
+                Polymer({
+                    is: "player-card"
+                });
             });
+
         </script>
     </dom-module>
 
@@ -129,13 +132,15 @@
             </paper-drawer-panel>
         </template>
         <script>
-            Polymer({
-                is: "pr-page",
-                properties: {
-                    selected: {
-                        value: 0
+            addEventListener('WebComponentsReady', function() {
+                Polymer({
+                    is: "pr-page",
+                    properties: {
+                        selected: {
+                            value: 0
+                        }
                     }
-                }
+                });
             });
         </script>
     </dom-module>
