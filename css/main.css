@@ -8,3 +8,11 @@
     width: 98%;
     margin: 1px 4px 1px 4px;
 }
+
+.pr-tag {
+    margin-top: 0.33em;
+    margin-bottom: 0.33em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

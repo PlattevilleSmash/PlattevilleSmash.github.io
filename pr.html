@@ -33,11 +33,11 @@
         <template>
             <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
                 <div class="layout horizontal">
-                    <h1 class="flex-3" style="margin-top: 0.33em; margin-bottom: 0.33em;">[[player-name]]</h1>
-                    <div class="flex-1">
-                        <img id="char1" src="{{character1}}" style="height: 59px; float: right; margin: 0 2px 0 2px">
-                        <img id="char2" src="{{character2}}" style="height: 59px; float: right; margin: 0 2px 0 2px">
+                    <div class="flex" style="min-width: 0;">
+                        <h1 class="pr-tag">[[player-name]]</h1>
                     </div>
+                    <img id="char1" src="{{character1}}" style="height: 59px;  margin-left: 4px;">
+                    <img id="char2" src="{{character2}}" style="height: 59px; ">
                 </div>
             </paper-card>
         </template>
