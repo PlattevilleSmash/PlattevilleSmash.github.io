@@ -16,3 +16,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.meme-img {
+    max-width: 100%;
+    width:auto;
+    height:auto;
+}

@@ -62,6 +62,7 @@
 
     <dom-module id="pr-page">
         <link rel="import" href="css/citric-flames.css" type="css">
+        <style is="custom-style" include="iron-flex iron-flex-factors"></style>
         <template>
             <paper-drawer-panel force-narrow>
                 <paper-header-panel drawer>
@@ -102,13 +103,20 @@
                     </paper-toolbar>
                     <iron-pages selected="{{selected}}">
                         <div class="content">
-                            <player-card player-name="1. WORM" character1="img/angry.png"></player-card>
-                            <player-card player-name="2. Kendrick" character1="img/angry.png"></player-card>
-                            <player-card player-name="3. 8_bit_D" character1="img/angry.png"></player-card>
-                            <player-card player-name="4. oh" character1="img/angry.png"></player-card>
+                            <player-card player-name="1. WORM" character1="img/memes/angry.png"></player-card>
+                            <player-card player-name="2. Kendrick" character1="img/memes/angry.png"></player-card>
+                            <player-card player-name="3. 8_bit_D" character1="img/memes/angry.png"></player-card>
+                            <player-card player-name="4. oh" character1="img/memes/angry.png"></player-card>
                         </div>
                         <div class="content">
-                            <player-card player-name="TBD" character1="img/wiiu/cloud.png"></player-card>
+                            <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
+                                <div class="layout vertical">
+                                    <div class="flex" style="min-width: 0;">
+                                        <h1 class="pr-tag">1. mm my Cory Rs</h1>
+                                    </div>
+                                    <img class="meme-img" src="img/memes/mm_my_cory_rs.png">
+                                </div>
+                            </paper-card>
                         </div>
                         <div class="content">
                             <player-card player-name="1. Zendrick"></player-card>
