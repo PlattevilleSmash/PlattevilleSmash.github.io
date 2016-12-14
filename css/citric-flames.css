@@ -83,3 +83,19 @@ paper-fab[disabled] { color: #656565 !important; background: #e4e4e4 !important;
 section.hero paper-menu, section[hero] paper-menu { --paper-menu-background-color: #fafafa; }
 
 paper-tabs { background-color: #fb8c00; color: #ffffff; }
+
+paper-dropdown-menu {
+    --paper-input-container: {
+        color: #ffffff;
+    };
+    --paper-input-container-input: {
+        color: #ffffff;
+    };
+    --paper-input-container-label: {
+        color: #ffffff;
+    };
+    --paper-dropdown-menu-icon: {
+        color: #ffffff;
+    };
+    --paper-input-container-color: #ffffff;
+}
