@@ -69,16 +69,18 @@
             </div>
         </template>
         <script>
-            Polymer({
-                is: "hall-entry",
-                ready: function() {
-                    if ( this.platteville == true ) {
-                        this.$.uwp.style.display = "initial";
+            addEventListener('WebComponentsReady', function() {
+                Polymer({
+                    is: "hall-entry",
+                    ready: function() {
+                        if ( this.platteville == true ) {
+                            this.$.uwp.style.display = "initial";
+                        }
+                    },
+                    properties: {
+                        platteville: Boolean
                     }
-                },
-                properties: {
-                    platteville: Boolean
-                }
+                });
             });
         </script>
     </dom-module>
