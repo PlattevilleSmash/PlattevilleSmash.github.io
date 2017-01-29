@@ -44,7 +44,7 @@
     <link rel="import" href="citric-flames.html">
 
     <dom-module id="hall-entry" attributes="tag img tournament platteville">
-        <style is="custom-style" include="iron-flex iron-flex-factors">
+        <style is="custom-style" include="iron-flex iron-flex-factors iron-flex-alignment">
             h1 {
                 margin: 0.2em;
                 color: #FFF;
@@ -59,7 +59,10 @@
                 <div class="layout horizontal">
                     <img height=90px width=auto style="margin:5px;" src="{{img}}">
                     <div class="layout vertical">
-                        <h1>{{tag}}</h1>
+                        <div class="layout horizontal center">
+                            <h1>{{tag}}</h1>
+                            <img id="uwp" height=30px width=auto style="margin:5px; display: none;" align="bottom" src="img/uwp.png">
+                        </div>
                         <h2>{{tournament}}</h2>
                     </div>
                 </div>
@@ -70,7 +73,7 @@
                 is: "hall-entry",
                 ready: function() {
                     if ( this.platteville == true ) {
-                        this.$.bgdiv.style.backgroundColor = "rgba(173, 97, 0, 0.5)";
+                        this.$.uwp.style.display = "initial";
                     }
                 },
                 properties: {
