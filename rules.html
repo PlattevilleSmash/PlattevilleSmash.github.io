@@ -34,12 +34,12 @@
 
     <link rel="import" href="citric-flames.html">
 
-    <dom-module id="rule-img" attributes="link">
+    <dom-module id="rule-img" attributes="link thumb">
         <style is="custom-style" include="iron-flex iron-flex-factors"></style>
         <template>
             <div class="flex-1 rule">
                 <a href="{{link}}">
-                    <img class="rule" src="{{link}}">
+                    <img class="rule" src="{{thumb}}">
                 </a>
             </div>
         </template>
@@ -89,14 +89,14 @@
             <paper-card style="width: 100%; padding: 8px;">
                 <h3>Simple rulesheets for each game:</h3>
                 <div class="layout horizontal">
-                    <rule-img link="img/rules/64-singles.png"></rule-img>
-                    <rule-img link="img/rules/melee-singles.png"></rule-img>
-                    <rule-img link="img/rules/melee-doubles.png"></rule-img>
+                    <rule-img thumb="img/rules/64-singles-thumb.jpg" link="img/rules/64-singles.png"></rule-img>
+                    <rule-img thumb="img/rules/melee-singles-thumb.jpg" link="img/rules/melee-singles.png"></rule-img>
+                    <rule-img thumb="img/rules/melee-doubles-thumb.jpg" link="img/rules/melee-doubles.png"></rule-img>
                 </div>
                 <div class="layout horizontal">
-                    <rule-img link="img/rules/pm-singles.png"></rule-img>
-                    <rule-img link="img/rules/wiiu-singles.png"></rule-img>
-                    <rule-img link="img/rules/wiiu-triples.png"></rule-img>
+                    <rule-img thumb="img/rules/pm-singles-thumb.jpg" link="img/rules/pm-singles.png"></rule-img>
+                    <rule-img thumb="img/rules/wiiu-singles-thumb.jpg" link="img/rules/wiiu-singles.png"></rule-img>
+                    <rule-img thumb="img/rules/wiiu-triples-thumb.jpg" link="img/rules/wiiu-triples.png"></rule-img>
                 </div>
             </paper-card>
         </div>
