@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https://plattevillesmash.github.io/trueskill.html" />
-    <meta property="og:title" content="Platteville Smash TrueSkill Rankings" />
-    <meta property="og:description" content="Platteville's computerized rankings for Smash Bros. competition." />
-    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png"/>
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="486" />
-    <meta property="og:image:height" content="486" />
+    <meta property="og:url" content="https://plattevillesmash.github.io/trueskill.html">
+    <meta property="og:title" content="Platteville Smash TrueSkill Rankings">
+    <meta property="og:description" content="Platteville's computerized rankings for Smash Bros. competition.">
+    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="486">
+    <meta property="og:image:height" content="486">
     <title>TrueSkill - Platteville Smash</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="image_src" href="img/pvs486.png"/>
+    <meta name="description" content="Platteville's computerized rankings for Smash Bros. competition.">
+    <meta name="theme-color" content="#fb8c00">
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="image_src" href="img/pvs486.png">
 
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
@@ -30,6 +33,8 @@
     <link rel="import" href="bower_components/paper-card/paper-card.html">
     <link rel="import" href="bower_components/iron-flex-layout/iron-flex-layout-classes.html">
     <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/paper-button/paper-button.html">
+
 
     <style is="custom-style" include="iron-flex iron-flex-factors"></style>
 
@@ -37,50 +42,62 @@
 </head>
 
 <body>
-<paper-drawer-panel responsive-width="1056px">
-    <paper-header-panel drawer>
-        <paper-toolbar>
-            <div>Platteville Smash</div>
-        </paper-toolbar>
-        <div>
-            <a href="index.html" tabindex="-1">
-                <paper-item>Home</paper-item>
-            </a>
-            <a href="pr.html" tabindex="-1">
-                <paper-item>Power Rankings</paper-item>
-            </a>
-            <a href="rules.html" tabindex="-1">
-                <paper-item>Rules</paper-item>
-            </a>
-            <a href="trueskill.html" tabindex="-1">
-                <paper-item>TrueSkill Rankings</paper-item>
-            </a>
-            <a href="hall.html" tabindex="-1">
-                <paper-item>Hall of Fame</paper-item>
-            </a>
-        </div>
-    </paper-header-panel>
-    <paper-header-panel main>
-        <paper-toolbar>
-            <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
-            <span class="title">TrueSkill</span>
-            <a href="index.html">
-                <img src="img/pvs51.png">
-            </a>
-        </paper-toolbar>
-        <div class="content">
-            <paper-card style="width: 100%; padding: 8px;">
-                <h3>TrueSkill Rankings</h3>
-                <paper-material elevation="1" style="margin: 4px 0 4px 0">
-                    <iframe src="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/pubhtml?widget=true&amp;headers=false" width="100%" height="500" frameBorder=0></iframe>
-                </paper-material>
-                <a href="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/edit?usp=sharing">
-                    <h4>Click here to filter by city on native Google Drive</h4>
+    <paper-drawer-panel responsive-width="1056px">
+        <paper-header-panel drawer>
+            <paper-toolbar>
+                <div>Platteville Smash</div>
+            </paper-toolbar>
+            <div>
+                <a href="index.html" tabindex="-1">
+                    <paper-item>Home</paper-item>
                 </a>
-            </paper-card>
-        </div>
-    </paper-header-panel>
-</paper-drawer-panel>
+                <a href="pr.html" tabindex="-1">
+                    <paper-item>Power Rankings</paper-item>
+                </a>
+                <a href="rules.html" tabindex="-1">
+                    <paper-item>Rules</paper-item>
+                </a>
+                <a href="trueskill.html" tabindex="-1">
+                    <paper-item>TrueSkill Rankings</paper-item>
+                </a>
+                <a href="hall.html" tabindex="-1">
+                    <paper-item>Hall of Fame</paper-item>
+                </a>
+            </div>
+        </paper-header-panel>
+        <paper-header-panel main>
+            <paper-toolbar>
+                <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
+                <span class="title">TrueSkill</span>
+                <a href="index.html">
+                <img class="toolbar-img" src="img/pvs-icon.svg">
+            </a>
+            </paper-toolbar>
+            <div class="content">
+                <paper-card style="width: 100%; padding: 8px;">
+                    <h3>Braacket Leagues</h3>
+                    <paper-button raised>
+                        <a href="https://braacket.com/league/plattevillemelee">Melee</a>
+                    </paper-button>
+                    <paper-button raised>
+                        <a href="https://braacket.com/league/plattevillepm">Project M</a>
+                    </paper-button>
+                    <paper-button raised>
+                        <a href="https://braacket.com/league/plattevillewiiu">Wii U</a>
+                    </paper-button>
+                    <hr>
+                    <h4>Full Trueskill History (Updated end of semester)</h4>
+                    <paper-material elevation="1" style="margin: 4px 0 4px 0">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/pubhtml?widget=true&amp;headers=false"
+                            width="100%" height="500" frameBorder=0></iframe>
+                    </paper-material>
+                    <a href="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/edit?usp=sharing">
+                        <h4>Click here to filter by city on native Google Drive</h4>
+                    </a>
+                </paper-card>
+            </div>
+        </paper-header-panel>
+    </paper-drawer-panel>
 </body>
 
 </html>

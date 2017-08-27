@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https://plattevillesmash.github.io/miscpr.html"/>
-    <meta property="og:title" content="Platteville Smash Miscellaneous Power Rankings"/>
-    <meta property="og:description" content="Platteville's power rankings for random things we deemed it necessary."/>
-    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png"/>
-    <meta property="og:image:type" content="image/png"/>
-    <meta property="og:image:width" content="486"/>
-    <meta property="og:image:height" content="486"/>
+    <meta property="og:url" content="https://plattevillesmash.github.io/miscpr.html">
+    <meta property="og:title" content="Platteville Smash Miscellaneous Power Rankings">
+    <meta property="og:description" content="Platteville's power rankings for random things we deemed it necessary.">
+    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="486">
+    <meta property="og:image:height" content="486">
     <title>Miscellaneous Power Rankings - Platteville Smash</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="image_src" href="img/pvs486.png"/>
+    <meta name="description" content="Platteville's power rankings for random things we deemed it necessary.">
+    <meta name="theme-color" content="#fb8c00">
+
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="image_src" href="img/pvs486.png">
 
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <link rel="import" href="bower_components/polymer/polymer.html">
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
@@ -51,12 +54,11 @@
             </paper-card>
         </template>
         <script>
-            addEventListener('WebComponentsReady', function() {
+            addEventListener('WebComponentsReady', function () {
                 Polymer({
                     is: "player-card"
                 });
             });
-
         </script>
     </dom-module>
 
@@ -102,7 +104,7 @@
                             </paper-listbox>
                         </paper-dropdown-menu>
                         <a href="index.html">
-                            <img src="img/pvs51.png">
+                            <img class="toolbar-img" src="img/pvs-icon.svg">
                         </a>
                     </paper-toolbar>
                     <iron-pages selected="{{selected}}">
@@ -135,7 +137,8 @@
                             <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
                                 <div class="layout horizontal">
                                     <div class="flex" style="min-width: 0;">
-                                        <h1 style="font-weight: bold; font-size: 2em; margin-top: 0.33em; margin-bottom: 0.33em;">2. 'goons with a z but in the phrase 'goonz with a z' goons is spelled with an S but in the explanation for the spelling, its spelled with a Z'</h1>
+                                        <h1 style="font-weight: bold; font-size: 2em; margin-top: 0.33em; margin-bottom: 0.33em;">2. 'goons with a z but in the phrase 'goonz with a z' goons is spelled with an S
+                                            but in the explanation for the spelling, its spelled with a Z'</h1>
                                     </div>
                                 </div>
                             </paper-card>
@@ -148,21 +151,21 @@
                             <player-card player-name="1. Kendrick"></player-card>
                         </div>
                         <div class="content">
-                            <player-card player-name="1. Chuck Lubs" ></player-card>
-                            <player-card player-name="2. Everyone else" ></player-card>
+                            <player-card player-name="1. Chuck Lubs"></player-card>
+                            <player-card player-name="2. Everyone else"></player-card>
                         </div>
                         <div class="content">
-                            <player-card player-name="1. 8_bit_D" ></player-card>
-                            <player-card player-name="2. Zen" ></player-card>
-                            <player-card player-name="3. Everyone else" ></player-card>
-                            <player-card player-name="4. Chuck Lubs" ></player-card>
+                            <player-card player-name="1. 8_bit_D"></player-card>
+                            <player-card player-name="2. Zen"></player-card>
+                            <player-card player-name="3. Everyone else"></player-card>
+                            <player-card player-name="4. Chuck Lubs"></player-card>
                         </div>
                     </iron-pages>
                 </paper-header-panel>
             </paper-drawer-panel>
         </template>
         <script>
-            addEventListener('WebComponentsReady', function() {
+            addEventListener('WebComponentsReady', function () {
                 Polymer({
                     is: "pr-page",
                     properties: {

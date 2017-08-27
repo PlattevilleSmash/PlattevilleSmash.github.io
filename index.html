@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https://plattevillesmash.github.io/index.html" />
-    <meta property="og:title" content="Platteville Smash Home Page" />
-    <meta property="og:description" content="Platteville Smash's main information reference location." />
-    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png"/>
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="486" />
-    <meta property="og:image:height" content="486" />
+    <meta property="og:url" content="https://plattevillesmash.github.io/index.html">
+    <meta property="og:title" content="Platteville Smash Home Page">
+    <meta property="og:description" content="Platteville Smash's main information reference location.">
+    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="486">
+    <meta property="og:image:height" content="486">
     <title>Platteville Smash Homepage</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="image_src" href="img/pvs486.png"/>
-
+    <meta name="description" content="Platteville Smash's main information reference location.">    
+    <meta name="theme-color" content="#fb8c00">
+    
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="image_src" href="img/pvs486.png">
+    
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
@@ -66,7 +69,7 @@
                 <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
                 <span class="title">Home</span>
                 <a href="index.html">
-                    <img src="img/pvs51.png">
+                        <img class="toolbar-img" src="img/pvs-icon.svg">
                 </a>
             </paper-toolbar>
             <div class="content">
@@ -74,23 +77,23 @@
                     <img src="img/pvs486.png" style="height: 110px; margin: auto 8px auto 8px;">
                     <h1>Platteville Smash</h1>
                 </div>
-                <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
-                    <div class="layout vertical" style="text-align: center;">
+                <paper-card style="width: 100%;">
+                    <div class="layout vertical card-content" style="text-align: center;">
                         <a href="pr.html" style="margin: 4px;" class="layout horizontal center">
-                            <iron-icon icon="editor:format-list-numbered"></iron-icon>
-                            <h3 style="margin-left: 2px">Power Rankings</h3>
+                            <iron-icon icon="editor:format-list-numbered" class="nav-line-icon"></iron-icon>
+                            <h3>Power Rankings</h3>
                         </a>
                         <a href="rules.html" style="margin: 4px;" class="layout horizontal center">
-                            <iron-icon icon="icons:view-headline"></iron-icon>
-                            <h3 style="margin-left: 2px">Rules</h3>
+                            <iron-icon icon="icons:view-headline" class="nav-line-icon"></iron-icon>
+                            <h3>Rules</h3>
                         </a>
                         <a href="trueskill.html" style="margin: 4px;" class="layout horizontal center">
-                            <iron-icon icon="social:people"></iron-icon>
-                            <h3 style="margin-left: 2px">TrueSkill Rankings</h3>
+                            <iron-icon icon="social:people" class="nav-line-icon"></iron-icon>
+                            <h3>TrueSkill Rankings</h3>
                         </a>
                         <a href="hall.html" style="margin: 4px;" class="layout horizontal center">
-                            <h3 style="font-size: 20px;">🏆</h3>
-                            <h3 style="margin-left: 2px">Hall of Fame</h3>
+                            <img src="img/Twemoji_1f3c6.svg" class="nav-line-icon" style="width: 24px" alt="Twemoji trophy emoji">
+                            <h3>Hall of Fame</h3>
                         </a>
                     </div>
                 </paper-card>

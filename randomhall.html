@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https://plattevillesmash.github.io/randomhall.html" />
-    <meta property="og:title" content="Platteville Smash Random Game Hall of Fame" />
-    <meta property="og:description" content="Platteville Smash's winners of the non-Smash tournaments." />
-    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png"/>
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="486" />
-    <meta property="og:image:height" content="486" />
+    <meta property="og:url" content="https://plattevillesmash.github.io/randomhall.html">
+    <meta property="og:title" content="Platteville Smash Random Game Hall of Fame">
+    <meta property="og:description" content="Platteville Smash's winners of the non-Smash tournaments.">
+    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="486">
+    <meta property="og:image:height" content="486">
     <title>Random Game Hall of Fame - Platteville Smash</title>
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-    <link rel="image_src" href="img/pvs486.png"/>
+    <meta name="description" content="Platteville Smash's winners of the non-Smash tournaments.">    
+    <meta name="theme-color" content="#fb8c00">
+    
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="image_src" href="img/pvs486.png">
 
     <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 
     <link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
     <link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
@@ -33,9 +36,11 @@
         paper-header-panel {
             background-image: url("img/star_bg.gif");
         }
+
         h1 {
             color: #FFF;
         }
+
         paper-item {
             background-color: white;
         }
@@ -49,6 +54,7 @@
                 margin: 0.2em;
                 color: #FFF;
             }
+
             h2 {
                 margin: 0.2em;
                 color: #FFF;
@@ -69,11 +75,11 @@
             </div>
         </template>
         <script>
-            addEventListener('WebComponentsReady', function() {
+            addEventListener('WebComponentsReady', function () {
                 Polymer({
                     is: "hall-entry",
-                    ready: function() {
-                        if ( this.platteville == true ) {
+                    ready: function () {
+                        if (this.platteville == true) {
                             this.$.uwp.style.display = "initial";
                         }
                     },
@@ -87,60 +93,60 @@
 </head>
 
 <body>
-<paper-drawer-panel force-narrow>
-    <paper-header-panel drawer>
-        <paper-toolbar>
-            <div>Platteville Smash</div>
-        </paper-toolbar>
-        <div>
-            <a href="index.html" tabindex="-1">
-                <paper-item>Home</paper-item>
+    <paper-drawer-panel force-narrow>
+        <paper-header-panel drawer>
+            <paper-toolbar>
+                <div>Platteville Smash</div>
+            </paper-toolbar>
+            <div>
+                <a href="index.html" tabindex="-1">
+                    <paper-item>Home</paper-item>
+                </a>
+                <a href="pr.html" tabindex="-1">
+                    <paper-item>Power Rankings</paper-item>
+                </a>
+                <a href="rules.html" tabindex="-1">
+                    <paper-item>Rules</paper-item>
+                </a>
+                <a href="trueskill.html" tabindex="-1">
+                    <paper-item>TrueSkill Rankings</paper-item>
+                </a>
+                <a href="hall.html" tabindex="-1">
+                    <paper-item>Hall of Fame</paper-item>
+                </a>
+            </div>
+        </paper-header-panel>
+        <paper-header-panel main>
+            <paper-toolbar>
+                <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
+                <span class="title">Random Game Hall of Fame</span>
+                <a href="index.html">
+                <img class="toolbar-img" src="img/pvs-icon.svg">
             </a>
-            <a href="pr.html" tabindex="-1">
-                <paper-item>Power Rankings</paper-item>
-            </a>
-            <a href="rules.html" tabindex="-1">
-                <paper-item>Rules</paper-item>
-            </a>
-            <a href="trueskill.html" tabindex="-1">
-                <paper-item>TrueSkill Rankings</paper-item>
-            </a>
-            <a href="hall.html" tabindex="-1">
-                <paper-item>Hall of Fame</paper-item>
-            </a>
-        </div>
-    </paper-header-panel>
-    <paper-header-panel main>
-        <paper-toolbar>
-            <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
-            <span class="title">Random Game Hall of Fame</span>
-            <a href="index.html">
-                <img src="img/pvs51.png">
-            </a>
-        </paper-toolbar>
-        <div class="content">
-            <audio controls="controls" loop="loop">
-                <source src="img/35-staff-roll.mp3" type="audio/mpeg">
-            </audio>
-            <h1 style="text-align: center; text-shadow: 5px 5px black;">Random Game Hall of Fame</h1>
-            <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="NRHH Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Suhlivan" tournament="Smash Jam 15 Pokkén Tournament" img="img/hall/suhlivan.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Cole" tournament="Smash Jam 19 Mario Kart: Double Dash!!" img="img/hall/cole.jpg"></hall-entry>
-            <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="Smash Jam 20 Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Phunky Sal" tournament="EBSJ Mystery Tournament Singles" img="img/hall/phunky_sal.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Zen" tournament="EBSJ Rivals of Aether" img="img/hall/zen.jpg" platteville=true></hall-entry>
-            <hall-entry tag="woof2" tournament="EBSJ Mario Kart: Double Dash!!" img="img/hall/woof2.jpg" platteville=true></hall-entry>
-            <hall-entry tag="TKLN" tournament="EBSJ Guitar Hero 3" img="img/hall/tkln.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Kendrick" tournament="EBSJ Kirby Air Ride" img="img/hall/kendrick.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Phunky SURN" tournament="EBSJ Mystery Tournament Doubles" img="img/hall/phunky_surn.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Bradical100" tournament="EBSJ Rocket League" img="img/hall/bradical100.jpg" platteville=true></hall-entry>
-            <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="EBSJ Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
-            <hall-entry tag="Hogosha" tournament="EBSJ Street Fighter V" img="img/hall/hogosha.jpg"></hall-entry>
-            <hall-entry tag="M150 | Refugee Bean" tournament="EBSJ Dr. Robotnik's Mean Bean Machine" img="img/hall/kendrick.jpg"></hall-entry>
+            </paper-toolbar>
+            <div class="content">
+                <audio controls="controls" loop="loop">
+                    <source src="img/35-staff-roll.mp3" type="audio/mpeg">
+                </audio>
+                <h1 style="text-align: center; text-shadow: 5px 5px black;">Random Game Hall of Fame</h1>
+                <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="NRHH Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Suhlivan" tournament="Smash Jam 15 Pokkén Tournament" img="img/hall/suhlivan.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Cole" tournament="Smash Jam 19 Mario Kart: Double Dash!!" img="img/hall/cole.jpg"></hall-entry>
+                <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="Smash Jam 20 Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Phunky Sal" tournament="EBSJ Mystery Tournament Singles" img="img/hall/phunky_sal.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Zen" tournament="EBSJ Rivals of Aether" img="img/hall/zen.jpg" platteville=true></hall-entry>
+                <hall-entry tag="woof2" tournament="EBSJ Mario Kart: Double Dash!!" img="img/hall/woof2.jpg" platteville=true></hall-entry>
+                <hall-entry tag="TKLN" tournament="EBSJ Guitar Hero 3" img="img/hall/tkln.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Kendrick" tournament="EBSJ Kirby Air Ride" img="img/hall/kendrick.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Phunky SURN" tournament="EBSJ Mystery Tournament Doubles" img="img/hall/phunky_surn.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Bradical100" tournament="EBSJ Rocket League" img="img/hall/bradical100.jpg" platteville=true></hall-entry>
+                <hall-entry tag="🏆⏩Сʜᴜᴄκ Ꮮᴜʙѕ 👀" tournament="EBSJ Mario Kart Wii" img="img/hall/chucklubs.jpg" platteville=true></hall-entry>
+                <hall-entry tag="Hogosha" tournament="EBSJ Street Fighter V" img="img/hall/hogosha.jpg"></hall-entry>
+                <hall-entry tag="M150 | Refugee Bean" tournament="EBSJ Dr. Robotnik's Mean Bean Machine" img="img/hall/kendrick.jpg"></hall-entry>
 
-        </div>
-    </paper-header-panel>
-</paper-drawer-panel>
+            </div>
+        </paper-header-panel>
+    </paper-drawer-panel>
 </body>
 
 </html>
