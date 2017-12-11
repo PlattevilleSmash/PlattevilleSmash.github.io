@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="http://ogp.me/ns/fb#">
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta property="og:url" content="https://plattevillesmash.github.io/oldpr/s17.html">
+    <meta property="og:title" content="Platteville Smash Power Rankings">
+    <meta property="og:description" content="Platteville's power rankings for Smash 64, Melee, Project M, and Wii U.">
+    <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="486">
+    <meta property="og:image:height" content="486">
+    <title>Power Rankings - Platteville Smash</title>
+    <meta name="description" content="Platteville's power rankings for Smash 64, Melee, Project M, and Wii U.">
+    <meta name="theme-color" content="#fb8c00">
+
+    <link rel="icon" type="image/png" href="../img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../img/favicon-16x16.png" sizes="16x16">
+    <link rel="image_src" href="../img/pvs486.png">
+
+    <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+
+    <link rel="import" href="../bower_components/polymer/polymer.html">
+    <link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+    <link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+    <link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+    <link rel="import" href="../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+    <link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+    <link rel="import" href="../bower_components/paper-item/paper-item.html">
+    <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+    <link rel="import" href="../bower_components/paper-card/paper-card.html">
+    <link rel="import" href="../bower_components/iron-flex-layout/iron-flex-layout-classes.html">
+    <link rel="import" href="../citric-flames.html">
+
+    <style is="custom-style" include="iron-flex iron-flex-factors"></style>
+
+    <dom-module id="player-card" attributes="player-name character1 character2">
+        <style is="custom-style" include="iron-flex iron-flex-factors"></style>
+        <template>
+            <paper-card style="width: 100%; padding: 8px; margin: 4px 0 4px 0;">
+                <div class="layout horizontal">
+                    <div class="flex" style="min-width: 0;">
+                        <h1 class="pr-tag">[[player-name]]</h1>
+                    </div>
+                    <img id="char1" src="{{character1}}" style="height: 59px;  margin-left: 4px;">
+                    <img id="char2" src="{{character2}}" style="height: 59px; ">
+                </div>
+            </paper-card>
+        </template>
+        <script>
+            addEventListener('WebComponentsReady', function () {
+                Polymer({
+                    is: "player-card"
+                });
+            });
+        </script>
+    </dom-module>
+
+    <dom-module id="pr-page">
+        <link rel="import" href="../css/citric-flames.css" type="css">
+        <style is="custom-style" include="iron-flex iron-flex-factors iron-flex-alignment">
+
+        </style>
+        <template>
+            <paper-drawer-panel responsive-width="1056px">
+                <paper-header-panel drawer>
+                    <paper-toolbar>
+                        <div>Platteville Smash</div>
+                    </paper-toolbar>
+                    <div>
+                        <a href="../index.html" tabindex="-1">
+                            <paper-item>Home</paper-item>
+                        </a>
+                        <a href="../pr.html" tabindex="-1">
+                            <paper-item>Power Rankings</paper-item>
+                        </a>
+                        <a href="../rules.html" tabindex="-1">
+                            <paper-item>Rules</paper-item>
+                        </a>
+                        <a href="../trueskill.html" tabindex="-1">
+                            <paper-item>TrueSkill Rankings</paper-item>
+                        </a>
+                        <a href="../hall.html" tabindex="-1">
+                            <paper-item>Hall of Fame</paper-item>
+                        </a>
+                    </div>
+                </paper-header-panel>
+                <paper-header-panel main>
+                    <paper-toolbar class="medium-tall">
+                        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+                        <div class="title">Spring 2017 Power Rankings</div>
+                        <a href="index.html">
+                            <img class="toolbar-img" src="img/pvs-icon.svg">
+                        </a>
+                        <paper-tabs fit-container scrollable selected="{{selected}}" class="fit bottom self-end flex">
+                            <paper-tab>Smash 64</paper-tab>
+                            <paper-tab>Melee</paper-tab>
+                            <paper-tab>Project M</paper-tab>
+                            <paper-tab>Wii U</paper-tab>
+                        </paper-tabs>
+                    </paper-toolbar>
+                    <iron-pages selected="{{selected}}">
+                        <div class="content">
+                            <player-card player-name="1. Сʜᴜᴄκ Ꮮᴜʙѕ 👀"
+                                         character1="../img/64/captain_falcon.png"></player-card>
+                            <player-card player-name="2. YELLOWYOSHI.ZIP"
+                                         character1="../img/64/yellowyoshi.png"></player-card>
+                            <player-card player-name="3. DrKBlaze" character1="../img/64/kirby.png"></player-card>
+                            <player-card player-name="4. TKLN" character1="../img/64/fox.png"></player-card>
+                            <player-card player-name="5. CUTE" character1="../img/64/ness.png"></player-card>
+                            <h5>Eligibility requirements: Attend 1 tournaments this semester and either attend
+                                UW-Platteville
+                                or consider Platteville Smash your home scene.</h5>
+                        </div>
+                        <div class="content">
+                            <player-card player-name="1. Kendrick" character1="../img/melee/jigglypuff.png"
+                                         character2="../img/melee/mr_game_watch.png"></player-card>
+                            <player-card player-name="2. oh" character1="../img/melee/falco.png"></player-card>
+                            <player-card player-name="3. Poskii" character1="../img/melee/marth.png"></player-card>
+                            <player-card player-name="4. Flux" character1="../img/melee/marth.png"></player-card>
+                            <player-card player-name="5. Zen" character1="../img/melee/sheik.png"></player-card>
+                            <player-card player-name="6. Dream" character1="../img/melee/sheik.png"></player-card>
+                            <player-card player-name="7. Bunk" character1="../img/melee/falco.png"></player-card>
+                            <player-card player-name="8. 8_Bit_D" character1="../img/melee/falco.png"></player-card>
+                            <player-card player-name="9. Сʜᴜᴄκ Ꮮᴜʙѕ 👀" character1="../img/melee/sheik.png"></player-card>
+                            <player-card player-name="10. Saucy" character1="../img/melee/fox.png"></player-card>
+                            <player-card player-name="HM. DrKBlaze" character1="../img/melee/sheik.png"
+                                         character2="../img/melee/luigi.png"></player-card>
+                            <player-card player-name="HM. n00b" character1="../img/melee/peach.png"></player-card>
+                            <h5>Eligibility requirements: Attend 2 tournaments this semester and either attend
+                                UW-Platteville
+                                or consider Platteville Smash your home scene.</h5>
+                        </div>
+                        <div class="content">
+                            <player-card player-name="1. Flux" character1="../img/pm/meta_knight.png"
+                                         character2="../img/pm/marth.png"></player-card>
+                            <player-card player-name="2. Poskii" character1="../img/pm/marth.png"></player-card>
+                            <player-card player-name="3. Сʜᴜᴄκ Ꮮᴜʙѕ 👀" character1="../img/pm/zelda.png"
+                                         character2="../img/pm/link.png"></player-card>
+                            <player-card player-name="4. Dream" character1="../img/pm/sheik.png"></player-card>
+                            <player-card player-name="5. Zen" character1="../img/pm/mario.png"
+                                         character2="../img/pm/snake.png"></player-card>
+                            <player-card player-name="6. DrKBlaze" character1="../img/pm/luigi.png"></player-card>
+                            <h5>Eligibility requirements: Attend 2 tournaments this semester and either attend
+                                UW-Platteville
+                                or consider Platteville Smash your home scene.</h5>
+                        </div>
+                        <div class="content">
+                            <player-card player-name="1. Cobalt" character1="../img/wiiu/cloud.png"
+                                         character2="../img/wiiu/sheik.png"></player-card>
+                            <player-card player-name="2. Kruser" character1="../img/wiiu/robin.png"
+                                         character2="../img/wiiu/peach.png"></player-card>
+                            <player-card player-name="3. DrKBlaze" character1="../img/wiiu/corrin.png"
+                                         character2="../img/wiiu/rob.png"></player-card>
+                            <player-card player-name="4. Bawk" character1="../img/wiiu/yoshi.png"
+                                         character2="../img/wiiu/bayonetta.png"></player-card>
+                            <player-card player-name="5. Kendrick" character1="../img/wiiu/olimar.png"></player-card>
+                            <player-card player-name="6. 8_bit_D" character1="../img/wiiu/diddy_kong.png"
+                                         character2="../img/wiiu/donkey_kong.png"></player-card>
+                            <player-card player-name="7. TKLN" character1="../img/wiiu/lucario.png"></player-card>
+                            <player-card player-name="8. Phunky Sal" character1="../img/wiiu/little_mac.png"></player-card>
+                            <player-card player-name="9. CardboardBear" character1="../img/wiiu/samus.png"></player-card>
+                            <player-card player-name="10. Hunter" character1="../img/wiiu/corrin.png"></player-card>
+                            <h5>Eligibility requirements: Attend 2 tournaments this semester and either attend
+                                UW-Platteville
+                                or consider Platteville Smash your home scene.</h5>
+                        </div>
+                    </iron-pages>
+                </paper-header-panel>
+            </paper-drawer-panel>
+        </template>
+        <script>
+            addEventListener('WebComponentsReady', function () {
+                Polymer({
+                    is: "pr-page",
+                    properties: {
+                        selected: {
+                            value: 1
+                        }
+                    }
+                });
+            });
+        </script>
+    </dom-module>
+</head>
+
+<body>
+<pr-page></pr-page>
+</body>
+
+</html>
