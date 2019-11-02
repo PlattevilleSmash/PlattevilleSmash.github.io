@@ -54,8 +54,7 @@
                             <paper-item>Home</paper-item>
                         </a>
                         <a href="pr.html" tabindex="-1">
-                            <paper-item>
-                            </paper-item>
+                            <paper-item>Power Rankings</paper-item>
                         </a>
                         <a href="rules.html" tabindex="-1">
                             <paper-item>Rules</paper-item>
@@ -78,12 +77,12 @@
                         <paper-tabs fit-container scrollable selected="{{selected}}" class="fit bottom self-end flex">
                             <paper-tab>Melee</paper-tab>
                             <paper-tab>Ultimate</paper-tab>
+                            <paper-tab>Project M</paper-tab>
                         </paper-tabs>
                     </paper-toolbar>
                     <iron-pages selected="{{selected}}">
                         <div class="content">
                             <paper-card style="width: 100%; padding: 8px;">
-                            <h3>Braacket Leagues</h3>
                             <paper-button raised>
                                 <a href="https://braacket.com/league/plattevillemelee/ranking">Melee</a>
                             </paper-button>
@@ -93,11 +92,19 @@
                         </div>
                         <div class="content">
                             <paper-card style="width: 100%; padding: 8px;">
-                            <h3>Braacket Leagues</h3>
                             <paper-button raised>
-                                <a href="https://braacket.com/league/plattevilleultimate/ranking">Melee</a>
+                                <a href="https://braacket.com/league/plattevilleultimate/ranking">Ultimate</a>
                             </paper-button>
                             <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevilleultimate/ranking/C5646C33-4371-4388-A4AD-1FECF2D400A9?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
+                            <hr>
+                            </paper-card>
+                        </div>
+                        <div class="content">
+                            <paper-card style="width: 100%; padding: 8px;">
+                            <paper-button raised>
+                                <a href="https://braacket.com/league/plattevillepm/ranking">Project M</a>
+                            </paper-button>
+                            <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillepm/ranking/F3AADB9E-BCC6-462A-B63D-224D01A4A305?rows=100&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
                             <hr>
                             </paper-card>
                         </div>
