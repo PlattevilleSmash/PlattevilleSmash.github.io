@@ -70,32 +70,28 @@
                 <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
                 <span class="title">TrueSkill</span>
                 <a href="index.html">
-                <img class="toolbar-img" src="img/pvs-icon.svg">
-            </a>
+                    <img class="toolbar-img" src="img/pvs-icon.svg">
+                </a>
+                <paper-tabs fit-container scrollable selected="{{selected}}" class="fit bottom self-end flex">
+                    <paper-tab>Melee</paper-tab>
+                    <paper-tab>Ultimate</paper-tab>
+                    <paper-tab>Project M</paper-tab>
+                </paper-tabs>
             </paper-toolbar>
+        <iron-pages selected="{{selected}}">
             <div class="content">
                 <paper-card style="width: 100%; padding: 8px;">
                     <h3>Braacket Leagues</h3>
                     <paper-button raised>
                         <a href="https://braacket.com/league/plattevillemelee/ranking">Melee</a>
                     </paper-button>
-                    <paper-button raised>
-                        <a href="https://braacket.com/league/plattevillepm/ranking">Project M</a>
-                    </paper-button>
-                    <paper-button raised>
-                        <a href="https://braacket.com/league/plattevilleultimate/ranking">Ultimate</a>
-                    </paper-button>
-                    <hr>
-                    <h4>Full Trueskill History (Updated end of semester)</h4>
-                    <paper-material elevation="1" style="margin: 4px 0 4px 0">
-                        <iframe src="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/pubhtml?widget=true&amp;headers=false"
-                            width="100%" height="500" frameBorder=0></iframe>
-                    </paper-material>
-                    <a href="https://docs.google.com/spreadsheets/d/1iiBF7WVJQGHZyAo-oJ5nBhC8ulvDnmGAL6InKf4l8nc/edit?usp=sharing">
-                        <h4>Click here to filter by city on native Google Drive</h4>
-                    </a>
                     <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillemelee/ranking/74D3220E-2640-44AD-BF35-A4DDDCAA9D4E?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
+                    <hr>
                 </paper-card>
+            </div>
+            <div class="content">
+            </div>
+            <div class="content">
             </div>
         </paper-header-panel>
     </paper-drawer-panel>
