@@ -39,7 +39,7 @@
 
     <style is="custom-style" include="iron-flex iron-flex-factors"></style>
 
-    <dom-module id="pr-page">
+    <dom-module id="trueskill-page">
         <link rel="import" href="css/citric-flames.css" type="css">
         <style is="custom-style" include="iron-flex iron-flex-factors iron-flex-alignment">
         </style>
@@ -84,7 +84,7 @@
                         <div class="content">
                             <paper-card style="width: 100%; padding: 8px;">
                             <paper-button raised>
-                                <a href="https://braacket.com/league/plattevillemelee/ranking">Melee</a>
+                                <a href="https://braacket.com/league/plattevillemelee/ranking">Melee Braacket Rankings</a>
                             </paper-button>
                             <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillemelee/ranking/74D3220E-2640-44AD-BF35-A4DDDCAA9D4E?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
                             <hr>
@@ -93,7 +93,7 @@
                         <div class="content">
                             <paper-card style="width: 100%; padding: 8px;">
                             <paper-button raised>
-                                <a href="https://braacket.com/league/plattevilleultimate/ranking">Ultimate</a>
+                                <a href="https://braacket.com/league/plattevilleultimate/ranking">Ultimate Braacket Rankings</a>
                             </paper-button>
                             <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevilleultimate/ranking/C5646C33-4371-4388-A4AD-1FECF2D400A9?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
                             <hr>
@@ -102,7 +102,7 @@
                         <div class="content">
                             <paper-card style="width: 100%; padding: 8px;">
                             <paper-button raised>
-                                <a href="https://braacket.com/league/plattevillepm/ranking">Project M</a>
+                                <a href="https://braacket.com/league/plattevillepm/ranking">Project M Braacket Rankings</a>
                             </paper-button>
                             <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillepm/ranking/F3AADB9E-BCC6-462A-B63D-224D01A4A305?rows=100&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
                             <hr>
@@ -115,7 +115,7 @@
         <script>
             addEventListener('WebComponentsReady', function () {
                 Polymer({
-                    is: "pr-page",
+                    is: "trueskill-page",
                     properties: {
                         selected: {
                             value: 0
@@ -128,7 +128,7 @@
 </head>
 
 <body>
-    <pr-page></pr-page>
+    <trueskill-page></trueskill-page>
 </body>
 
 </html>
