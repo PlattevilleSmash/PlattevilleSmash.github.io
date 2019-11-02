@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta property="og:url" content="https://plattevillesmash.github.io/trueskill.html">
-    <meta property="og:title" content="Platteville Smash TrueSkill Rankings">
-    <meta property="og:description" content="Platteville's computerized rankings for Smash Bros. competition.">
+    <meta property="og:url" content="https://plattevillesmash.github.io/pr.html">
+    <meta property="og:title" content="Platteville Smash Power Rankings">
+    <meta property="og:description" content="Platteville's power rankings for Smash 64, Melee, Project M, and Wii U.">
     <meta property="og:image" content="https://plattevillesmash.github.io/img/pvs486.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="486">
@@ -39,63 +39,88 @@
 
     <style is="custom-style" include="iron-flex iron-flex-factors"></style>
 
-    <link rel="import" href="citric-flames.html">
+    <dom-module id="pr-page">
+        <link rel="import" href="css/citric-flames.css" type="css">
+        <style is="custom-style" include="iron-flex iron-flex-factors iron-flex-alignment">
+        </style>
+        <template>
+            <paper-drawer-panel responsive-width="1056px">
+                <paper-header-panel drawer>
+                    <paper-toolbar>
+                        <div>Platteville Smash</div>
+                    </paper-toolbar>
+                    <div>
+                        <a href="index.html" tabindex="-1">
+                            <paper-item>Home</paper-item>
+                        </a>
+                        <a href="pr.html" tabindex="-1">
+                            <paper-item>Power Rankings</paper-item>
+                        </a>
+                        <a href="rules.html" tabindex="-1">
+                            <paper-item>Rules</paper-item>
+                        </a>
+                        <a href="trueskill.html" tabindex="-1">
+                            <paper-item>TrueSkill Rankings</paper-item>
+                        </a>
+                        <a href="hall.html" tabindex="-1">
+                            <paper-item>Hall of Fame</paper-item>
+                        </a>
+                    </div>
+                </paper-header-panel>
+                <paper-header-panel main>
+                    <paper-toolbar class="medium-tall">
+                        <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+                        <div class="title">Power Rankings</div>
+                        <a href="index.html">
+                            <img class="toolbar-img" src="img/pvs-icon.svg">
+                        </a>
+                        <paper-tabs fit-container scrollable selected="{{selected}}" class="fit bottom self-end flex">
+                            <paper-tab>Melee</paper-tab>
+                            <paper-tab>Ultimate</paper-tab>
+                        </paper-tabs>
+                    </paper-toolbar>
+                    <iron-pages selected="{{selected}}">
+                        <div class="content">
+                            <paper-card style="width: 100%; padding: 8px;">
+                            <h3>Braacket Leagues</h3>
+                            <paper-button raised>
+                                <a href="https://braacket.com/league/plattevillemelee/ranking">Melee</a>
+                            </paper-button>
+                            <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillemelee/ranking/74D3220E-2640-44AD-BF35-A4DDDCAA9D4E?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
+                            <hr>
+                            </paper-card>
+                        </div>
+                        <div class="content">
+                            <paper-card style="width: 100%; padding: 8px;">
+                            <h3>Braacket Leagues</h3>
+                            <paper-button raised>
+                                <a href="https://braacket.com/league/plattevilleultimate/ranking">Melee</a>
+                            </paper-button>
+                            <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevilleultimate/ranking/C5646C33-4371-4388-A4AD-1FECF2D400A9?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
+                            <hr>
+                            </paper-card>
+                        </div>
+                    </iron-pages>
+                </paper-header-panel>
+            </paper-drawer-panel>
+        </template>
+        <script>
+            addEventListener('WebComponentsReady', function () {
+                Polymer({
+                    is: "pr-page",
+                    properties: {
+                        selected: {
+                            value: 0
+                        }
+                    }
+                });
+            });
+        </script>
+    </dom-module>
 </head>
 
 <body>
-    <paper-drawer-panel responsive-width="1056px">
-        <paper-header-panel drawer>
-            <paper-toolbar>
-                <div>Platteville Smash</div>
-            </paper-toolbar>
-            <div>
-                <a href="index.html" tabindex="-1">
-                    <paper-item>Home</paper-item>
-                </a>
-                <a href="pr.html" tabindex="-1">
-                    <paper-item>Power Rankings</paper-item>
-                </a>
-                <a href="rules.html" tabindex="-1">
-                    <paper-item>Rules</paper-item>
-                </a>
-                <a href="trueskill.html" tabindex="-1">
-                    <paper-item>TrueSkill Rankings</paper-item>
-                </a>
-                <a href="hall.html" tabindex="-1">
-                    <paper-item>Hall of Fame</paper-item>
-                </a>
-            </div>
-        </paper-header-panel>
-        <paper-header-panel main>
-            <paper-toolbar>
-                <paper-icon-button icon="menu" paper-drawer-toggle role="button"></paper-icon-button>
-                <span class="title">TrueSkill</span>
-                <a href="index.html">
-                    <img class="toolbar-img" src="img/pvs-icon.svg">
-                </a>
-                <paper-tabs fit-container scrollable selected="{{selected}}" class="fit bottom self-end flex">
-                    <paper-tab>Melee</paper-tab>
-                    <paper-tab>Ultimate</paper-tab>
-                    <paper-tab>Project M</paper-tab>
-                </paper-tabs>
-            </paper-toolbar>
-        <iron-pages selected="{{selected}}">
-            <div class="content">
-                <paper-card style="width: 100%; padding: 8px;">
-                    <h3>Braacket Leagues</h3>
-                    <paper-button raised>
-                        <a href="https://braacket.com/league/plattevillemelee/ranking">Melee</a>
-                    </paper-button>
-                    <iframe width='100%' height='600px' frameborder='0'  allowfullscreen src='https://braacket.com/league/plattevillemelee/ranking/74D3220E-2640-44AD-BF35-A4DDDCAA9D4E?rows=50&cols=&page=1&page_cols=1&game_character=&country=&search=&embed=1'></iframe>
-                    <hr>
-                </paper-card>
-            </div>
-            <div class="content">
-            </div>
-            <div class="content">
-            </div>
-        </paper-header-panel>
-    </paper-drawer-panel>
+    <pr-page></pr-page>
 </body>
 
 </html>
